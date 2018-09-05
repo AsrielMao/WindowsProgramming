@@ -1,0 +1,15 @@
+D:\CSProject\WindowsProgramming\TxtCombine\obj\Debug\TxtCombine.csprojAssemblyReference.cache
+D:\CSProject\WindowsProgramming\TxtCombine\obj\Debug\MainWindow.g.cs
+D:\CSProject\WindowsProgramming\TxtCombine\obj\Debug\App.g.cs
+D:\CSProject\WindowsProgramming\TxtCombine\obj\Debug\TxtCombine_MarkupCompile.cache
+D:\CSProject\WindowsProgramming\TxtCombine\obj\Debug\TxtCombine_MarkupCompile.lref
+D:\CSProject\WindowsProgramming\TxtCombine\bin\Debug\TxtCombine.exe.config
+D:\CSProject\WindowsProgramming\TxtCombine\bin\Debug\TxtCombine.exe
+D:\CSProject\WindowsProgramming\TxtCombine\bin\Debug\TxtCombine.pdb
+D:\CSProject\WindowsProgramming\TxtCombine\obj\Debug\MainWindow.baml
+D:\CSProject\WindowsProgramming\TxtCombine\obj\Debug\TxtCombine.g.resources
+D:\CSProject\WindowsProgramming\TxtCombine\obj\Debug\TxtCombine.Properties.Resources.resources
+D:\CSProject\WindowsProgramming\TxtCombine\obj\Debug\TxtCombine.csproj.GenerateResource.cache
+D:\CSProject\WindowsProgramming\TxtCombine\obj\Debug\TxtCombine.csproj.CoreCompileInputs.cache
+D:\CSProject\WindowsProgramming\TxtCombine\obj\Debug\TxtCombine.exe
+D:\CSProject\WindowsProgramming\TxtCombine\obj\Debug\TxtCombine.pdb
