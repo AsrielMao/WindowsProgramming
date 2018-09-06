@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 using System.Windows.Forms;
+using System.IO;
 
 namespace TxtCombine
 {
@@ -38,6 +39,24 @@ namespace TxtCombine
                 folder_path = folderBrowserDialog1.SelectedPath;
                 txt_path.Text = folder_path;
             }
+        }
+
+        private void btn_Search_Click(object sender, RoutedEventArgs e)
+        {
+            if (Directory.Exists(folder_path))//检查文件目录是否存在
+            {
+                //搜索给定字符串的文件
+                string[] folder_files = Directory.GetFiles(folder_path,
+                         txt_SearchKey.Text, SearchOption.AllDirectories);
+                lb_SearchResult.Items.Clear();
+                int selected_index = 0;
+                foreach (string folder_file in folder_files)
+                {
+                    selected_index = lb_SearchResult.Items.Add(folder_file);
+                   // lb_SearchResult.SetSelected(selected_index, true);
+                }
+            }
+
         }
     }
 }

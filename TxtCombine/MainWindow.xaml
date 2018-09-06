@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TxtCombine"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="339.6" Width="562.4">
     <Grid>
-        <Button x:Name="btn_path" Content="Button" HorizontalAlignment="Left" Margin="70,37,0,0" VerticalAlignment="Top" Width="75" Click="btn_path_Click"/>
-        <TextBox x:Name="txt_path" HorizontalAlignment="Left" Height="23" Margin="209,37,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="372"/>
+        <Button x:Name="btn_path" Content="选择文件目录" HorizontalAlignment="Left" Margin="15,13,0,0" VerticalAlignment="Top" Width="120" Click="btn_path_Click" Height="23"/>
+        <TextBox x:Name="txt_path" HorizontalAlignment="Left" Height="23" Margin="140,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="372" IsReadOnly="True" BorderThickness="0" Background="#FFFFEFEF"/>
+        <Label Content="搜索关键字" HorizontalAlignment="Left" Margin="15,41,0,0" VerticalAlignment="Top" Height="23" Width="120"/>
+        <TextBox x:Name="txt_SearchKey" HorizontalAlignment="Left" Height="23" Margin="140,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246"/>
+        <Button x:Name="btn_Search" Content="搜索" HorizontalAlignment="Left" Margin="410,41,0,0" VerticalAlignment="Top" Width="102" Height="23" Click="btn_Search_Click"/>
+        <ListBox x:Name="lb_SearchResult" HorizontalAlignment="Left" Height="108" Margin="15,69,0,0" VerticalAlignment="Top" Width="497"/>
 
     </Grid>
 </Window>
