@@ -49,14 +49,52 @@ namespace TxtCombine
                 string[] folder_files = Directory.GetFiles(folder_path,
                          txt_SearchKey.Text, SearchOption.AllDirectories);
                 lb_SearchResult.Items.Clear();
-                int selected_index = 0;
+
                 foreach (string folder_file in folder_files)
                 {
-                    selected_index = lb_SearchResult.Items.Add(folder_file);
-                   // lb_SearchResult.SetSelected(selected_index, true);
+                    lb_SearchResult.Items.Add(folder_file);
                 }
             }
 
         }
+
+        private void btn_add_Click(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i < lb_SearchResult.SelectedItems.Count; i++)
+            {
+                lb_Selected.Items.Add(lb_SearchResult.SelectedItems[i]);
+            }
+        }
+
+        private void btn_delete_Click(object sender, RoutedEventArgs e)
+        {
+            lb_Selected.Items.Remove(lb_Selected.SelectedItem);
+        }
+
+        private void btn_Clear_Click(object sender, RoutedEventArgs e)
+        {
+            lb_Selected.Items.Clear();
+        }
+
+        private void btn_Name_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Title = " 选择要合并后的文件";
+            saveFileDialog1.InitialDirectory = System.Environment.SpecialFolder.DesktopDirectory.ToString();
+            saveFileDialog1.OverwritePrompt = false;
+            if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                label_Name.Text = saveFileDialog1.FileName;
+            }
+        }
+
+        private void btn_Combine_Click(object sender, RoutedEventArgs e)
+        {
+            if (File.Exists(label_Name.Text))
+            {
+                File.Delete(label_Name.Text);
+            }
+        }
+
     }
 }

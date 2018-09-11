@@ -5,14 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TxtCombine"
         mc:Ignorable="d"
-        Title="MainWindow" Height="339.6" Width="562.4">
+        Title="MainWindow" Height="437.6" Width="624">
     <Grid>
         <Button x:Name="btn_path" Content="选择文件目录" HorizontalAlignment="Left" Margin="15,13,0,0" VerticalAlignment="Top" Width="120" Click="btn_path_Click" Height="23"/>
         <TextBox x:Name="txt_path" HorizontalAlignment="Left" Height="23" Margin="140,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="372" IsReadOnly="True" BorderThickness="0" Background="#FFFFEFEF"/>
         <Label Content="搜索关键字" HorizontalAlignment="Left" Margin="15,41,0,0" VerticalAlignment="Top" Height="23" Width="120"/>
         <TextBox x:Name="txt_SearchKey" HorizontalAlignment="Left" Height="23" Margin="140,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246"/>
         <Button x:Name="btn_Search" Content="搜索" HorizontalAlignment="Left" Margin="410,41,0,0" VerticalAlignment="Top" Width="102" Height="23" Click="btn_Search_Click"/>
-        <ListBox x:Name="lb_SearchResult" HorizontalAlignment="Left" Height="108" Margin="15,69,0,0" VerticalAlignment="Top" Width="497"/>
+        <ListBox x:Name="lb_SearchResult" HorizontalAlignment="Left" Height="129" Margin="15,69,0,0" VerticalAlignment="Top" Width="497" SelectionMode="Extended"/>
+        <Button x:Name="btn_add" Content="添加" HorizontalAlignment="Left" Margin="24,203,0,0" VerticalAlignment="Top" Width="75" Click="btn_add_Click"/>
+        <Button x:Name="btn_delete" Content="移除" HorizontalAlignment="Left" Margin="126,203,0,0" VerticalAlignment="Top" Width="75" Click="btn_delete_Click"/>
+        <Button x:Name="btn_Clear" Content="清空" HorizontalAlignment="Left" Margin="228,203,0,0" VerticalAlignment="Top" Width="75" Click="btn_Clear_Click"/>
+        <ListBox x:Name="lb_Selected" HorizontalAlignment="Left" Height="123" Margin="15,227,0,0" VerticalAlignment="Top" Width="497"/>
+        <Button x:Name="btn_up" Content="上移" HorizontalAlignment="Left" Margin="524,227,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_down" Content="下移" HorizontalAlignment="Left" Margin="524,251,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="524,306,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_Combine" Content="合并文件" HorizontalAlignment="Left" Margin="524,330,0,0" VerticalAlignment="Top" Width="75" Click="btn_Combine_Click"/>
+        <Button x:Name="btn_Name" Content="目标文件名" HorizontalAlignment="Left" Margin="24,355,0,0" VerticalAlignment="Top" Width="75" Click="btn_Name_Click"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="126,359,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="228,359,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="330,359,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="label_Name" HorizontalAlignment="Left" Height="23" Margin="24,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="488" Background="#FFFFEFEF" BorderThickness="0"/>
 
     </Grid>
 </Window>
