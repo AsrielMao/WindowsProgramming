@@ -157,6 +157,10 @@ namespace TxtCombine
         private void btn_up_Click(object sender, RoutedEventArgs e)
         {
             int count = lb_Selected.SelectedIndex;
+            if (count < 0)
+            {
+                return;
+            }
             string str = lb_Selected.SelectedItem.ToString();
             if (count > 0)
             {
@@ -169,6 +173,10 @@ namespace TxtCombine
         private void btn_down_Click(object sender, RoutedEventArgs e)
         {
             int count = lb_Selected.SelectedIndex;
+            if (count < 0)
+            {
+                return;
+            }
             string str = lb_Selected.SelectedItem.ToString();
             if (count < lb_Selected.Items.Count-1)
             {

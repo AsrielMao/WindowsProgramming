@@ -95,5 +95,11 @@ namespace CharExecution
             voice.Speak(txt_article.Text.Trim(), spFlags);
         }
 
+        private void btn_play_Click_1(object sender, RoutedEventArgs e)
+        {
+            SpeechVoiceSpeakFlags spFlags = SpeechVoiceSpeakFlags.SVSFlagsAsync;
+            SpVoice voice = new SpVoice();
+            voice.Speak(txt_article.Text.Trim(), spFlags);
+        }
     }
 }
